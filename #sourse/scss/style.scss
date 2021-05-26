@@ -1,0 +1,68 @@
+@import "nullstyle.scss";
+body {
+    font-family: "Fira Sans", sans-serif;
+}
+
+a {
+    color: inherit;
+    font-family: inherit;
+}
+
+.header {
+    padding-top: 44px;
+    background: #F2F3F6;
+    height: 100vh;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    &-item+&-item {
+        margin-left: 20px;
+    }
+    &-link {
+        font-size: 16px;
+        line-height: 19px;
+        color: #111238;
+        transition: 0.3s;
+    }
+    &-link:hover {
+        color: #1A75E8;
+        transition: 0.3s;
+    }
+}
+
+.authorization-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.authorization__button-link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #111238;
+    padding: 5px 0;
+    margin-right: 40px;
+    transition: 0.3s;
+    &:hover {
+        color: #1A75E8;
+        transition: 0.3s;
+    }
+}
+
+.button-primary {
+    padding: 15px 30px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #1A75E8;
+    border-radius: 5px;
+    transition: 0.3s;
+    &:hover {
+        background: #005dce;
+        transition: 0.3s;
+    }
+}
