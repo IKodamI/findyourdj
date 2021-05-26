@@ -107,8 +107,12 @@ a {
 
 .header {
   padding-top: 44px;
+  padding-bottom: 56px;
   background: #F2F3F6;
-  height: 100vh;
+}
+
+.header__inner {
+  margin-bottom: 75px;
 }
 
 .menu__list {
@@ -180,4 +184,185 @@ a {
   background: #005dce;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+/*
+*/
+.header-info {
+  padding-top: 43px;
+}
+
+.header__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 53px;
+  color: #111238;
+  margin-bottom: 15px;
+}
+
+.header__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #111238;
+  margin-bottom: 30px;
+}
+
+.header__search {
+  background: #FFFFFF;
+  border: 1px solid rgba(209, 209, 209, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+          box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+  border-radius: 5px;
+  padding: 11px;
+  max-width: 447px;
+  margin-bottom: 15px;
+}
+.header__search-area {
+  padding: 0 8px 0 13px;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 5px;
+}
+.header__search-area::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #B2B2B2;
+  font-family: "Fira Sans", sans-serif;
+}
+.header__search-area::-moz-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #B2B2B2;
+  font-family: "Fira Sans", sans-serif;
+}
+.header__search-area:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #B2B2B2;
+  font-family: "Fira Sans", sans-serif;
+}
+.header__search-area::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #B2B2B2;
+  font-family: "Fira Sans", sans-serif;
+}
+.header__search-area::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #B2B2B2;
+  font-family: "Fira Sans", sans-serif;
+}
+.header__search-area:focus {
+  outline: 1px dashed #666;
+}
+.header__search-button span {
+  padding-left: 25px;
+  position: relative;
+}
+.header__search-button span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("../../images/search.svg");
+  height: 15px;
+  width: 15px;
+}
+
+.tags-group {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #B2B2B2;
+}
+
+.tags-lable {
+  margin-right: 5px;
+}
+
+.tag {
+  padding: 5px 10px;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.section {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #111238;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #8575;
+  display: inline-block;
+  background: #F2F3F6;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 35px 40px;
+}
+.card__text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #111238;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.card__icon {
+  margin-bottom: 15px;
+  fill: #111238;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.card:hover {
+  background: #1A75E8;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.card:hover .card__icon, .card:hover .card__text {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  fill: #fff;
+  color: #fff;
 }
